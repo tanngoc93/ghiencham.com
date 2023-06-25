@@ -67,7 +67,6 @@ services:
       - "traefik.http.routers.backend-secured.tls.certresolver=myhttpchallenge"
     depends_on:
       - db
-      - redis
     networks:
       - bridge-network
 
